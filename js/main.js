@@ -17,7 +17,7 @@ $('button').on('click',function(){
     ({
     type: "POST",
     dataType : 'json',
-    url: '../data/data.json',
+    url: 'http://VPathak0831.github.io/data/data.json',
     data: outputdata,
     success: function () {alert("Thanks!"); },
     failure: function() {alert("Error!");}
