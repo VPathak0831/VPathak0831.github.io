@@ -8,9 +8,9 @@ $('document').ready(function(){
 		var sheet = [];
 		for(var i = 1; i < entries.length; i++) {
 			sheet[i-1] = {
-				console.log(entries[i].gsx$post.$t);
-				"messages" : entries[i].gsx$post.$t,
-				"date" : entries[i].gsx$date.$t 
+				console.log(entries[i-1].gsx$post.$t);
+				"messages" : entries[i-1].gsx$post.$t,
+				"date" : entries[i-1].gsx$date.$t 
 			}
 		}
 	});
