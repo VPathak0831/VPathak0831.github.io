@@ -17,7 +17,6 @@ $('button').on('click',function(){
     ({
     type: "POST",
     dataType : 'json',
-    async: false,
     url: '../data/data.json',
     data: outputdata,
     success: function () {alert("Thanks!"); },
