@@ -16,8 +16,8 @@ $('button').on('click',function(){
     $.ajax({
 	    type: "POST",
 	    dataType: 'json',
-	    url: 'https://VPathak0831.github.io/data/data.json',
-	    data: {outputdata},
+	    url: 'https://docs.google.com/a/lsoc.org/forms/d/e/1FAIpQLSd0X3SSJcvLnRI_A8Uh9Chbd-SvnNIhXGRVF6x8O861bn7hXA/formResponse',
+	    data: {"entry.1507894826":outputdata.getMessage(),"entry.997903729":outputdata.getTimePosted()},
     });
 	$('#posts').append('<div class="post"><p>'+tweet.message+'</p></div>');
 });
