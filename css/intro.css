@@ -1,0 +1,46 @@
+body {
+	background-color: rgba(73,216,230,.3)
+}
+
+#header {
+	width: 100%;
+	text-align: center;
+	background-color: rgba(73,216,255,.3);
+}
+
+p {
+	font-family: 'Raleway';
+}
+ 
+#header img {
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	opacity: 1;
+}
+
+#header p {
+	font-family: 'Anton';
+	color: rgb(73,190,255);
+	margin-top: -10px;
+}
+
+section {
+	display: inline;
+	width:100%;
+	/*width: 700px;*/
+}
+
+.para {
+	width: 400px;
+	float: left;
+}
+
+.para_img {
+	width: 400px;
+	float: right;
+}
+
+#buttonThing {
+	display: inline-block;
+}
