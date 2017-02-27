@@ -5,14 +5,7 @@ var worksheetNumber = 'od6'
 $('document').ready(function(){
 	$.getJSON(spreadsheetUrl,function(data){
 		entries = data.feed.entry;
-		var sheet = [];
-		for(var i = 1; i < entries.length; i++) {
-			sheet[i-1] = {
-				console.log(entries[i-1].gsx$post.$t);
-				"messages" : entries[i-1].gsx$post.$t,
-				"date" : entries[i-1].gsx$date.$t 
-			}
-		}
+		console.log(entries);
 	});
 });
 
