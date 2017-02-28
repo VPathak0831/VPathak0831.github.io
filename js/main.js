@@ -1,11 +1,12 @@
-var spreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1Edsp6Tc6rtA3EQeJAWdz7Jb0PHpJTc1m_cPjezs89-E/pubhtml';
-var spreadsheetID = '1Edsp6Tc6rtA3EQeJAWdz7Jb0PHpJTc1m_cPjezs89-E'
-var worksheetNumber = 'od6'
+var url = 'https://docs.google.com/spreadsheets/d/1Edsp6Tc6rtA3EQeJAWdz7Jb0PHpJTc1m_cPjezs89-E/pubhtml';
 
 $('document').ready(function(){
-	$.getJSON(spreadsheetUrl,function(data){
-		entries = data.feed.entry;
-		console.log(entries);
+	$.ajax({
+		method: 'GET',
+		url: url,
+	})
+	.done(function(data) {
+		console.log(data);
 	});
 });
 
@@ -31,3 +32,5 @@ $('button').on('click',function(){
     });
 	$('#posts').append('<div class="post"><p>'+tweet.message+'</p></div>');
 });
+
+
