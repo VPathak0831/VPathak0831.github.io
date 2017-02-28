@@ -1,11 +1,11 @@
 var url = 'https://docs.google.com/spreadsheets/d/1Edsp6Tc6rtA3EQeJAWdz7Jb0PHpJTc1m_cPjezs89-E/pubhtml';
 
 $('document').ready(function(){
+	console.log("got here");
 	$.ajax({
 		method: 'GET',
-		url: url,
-	})
-	.done(function(data) {
+		url: url
+	}).done(function(data) {
 		console.log(data);
 	});
 });
