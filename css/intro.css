@@ -2,6 +2,10 @@ body {
 	background-color: rgba(73,216,230,.3)
 }
 
+h2 {
+	font-family: 'Anton';
+}
+
 #header {
 	width: 100%;
 	text-align: center;
@@ -25,10 +29,9 @@ p {
 	margin-top: -10px;
 }
 
-section {
-	display: inline;
-	width:100%;
-	/*width: 700px;*/
+.paragraph {
+	float: left;
+	width: 100%;
 }
 
 .para {
@@ -42,6 +45,12 @@ section {
 	float: right;
 }
 
+#startnow {
+	text-align: center;
+	left: 50%;
+}
+
 #buttonThing {
 	display: inline-block;
+	text-align: center;
 }
